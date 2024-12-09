@@ -16,7 +16,7 @@ export const Home = () => {
 				{store.message || "Loading message from the backend (make sure your python backend is running)..."}
 			</div>
 			<p>
-				Leonardo
+				Leonardo Medina
 				
 			</p>
 		</div>
