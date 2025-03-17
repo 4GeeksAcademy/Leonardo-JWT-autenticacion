@@ -1,3 +1,141 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+
+.text-center {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #555, #222);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.text-center:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+p:last-child {
+    font-weight: bold;
+}
+
+.nav{
+    width: 100%;
+}
+
+#Login {
+    background: linear-gradient(135deg, #666, #333); /* Gradiente en escala de grises */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+#Login:hover {
+    background: linear-gradient(135deg, #777, #444); /* Cambio de tono al pasar el mouse */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#Login:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.formulario {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #444, #222); /* Fondo con gradiente en escala de grises */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.formulario h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #888;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #aaa;
+    outline: none;
+    background: #222;
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #666, #333);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 150px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    outline: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #777, #444);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
