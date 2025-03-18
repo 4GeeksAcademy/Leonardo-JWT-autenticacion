@@ -46,10 +46,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					return elm;
 				});
 
-				//reset the global store
 				setStore({ demo: demo });
 			},
-			//Creamos la funcion que controla la modificacion de token y user tanto en el store como en el localStorage
 			setAuth : (token, user) => {
 				setStore({"token":(token)});
 				setStore({"user":(user)});

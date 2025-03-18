@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
+import "../../styles/index.css";
 
 export const Navbar = () => {
 	const { store, actions } = useContext(Context);
@@ -21,10 +22,10 @@ export const Navbar = () => {
 				</Link>
 				<div className="pt-3 justify-content-end nav">
 					<Link to="/login">
-						<span className="navbar-brand mb-0 h1">Login</span>
+						<span id="Login" className="navbar-brand mb-0 h1">Login</span>
 					</Link>
 					<Link to="/signup">
-						<span className="navbar-brand mb-0 h1">Register</span>
+						<span id="Register" className="navbar-brand mb-0 h1">Register</span>
 					</Link>
 				</div>
 			</nav>

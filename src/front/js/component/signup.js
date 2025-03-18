@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import "../../styles/index.css";
 
 export const Signup = () => {
 
@@ -40,7 +41,7 @@ export const Signup = () => {
     return (
         <div className="formulario">
             <h1>Registro</h1>
-            <h5>Recuerda que una vez registrado deberás iniciar sesión</h5>
+            <h5>Una vez que te registres, deberás iniciar sesión para acceder.</h5>
 
             <form action="">
                 <div>
@@ -55,7 +56,7 @@ export const Signup = () => {
                     <label className="form-label">Password</label>
                     <input className="form-control" onChange={handlePassword} type="password" placeholder="password" name="password" required />
                 </div>
-                <button type="submit" title="Registrarse" name="Registrarse" onClick={() => fetchRegister()}>Registrarse</button>
+                <button id="Register" type="submit" title="Registrarse" name="Registrarse" onClick={() => fetchRegister()}>Registrarse</button>
             </form>
             <Link to="/login">¿Ya tienes cuenta? Inicia sesion</Link>
         </div>

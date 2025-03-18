@@ -65,6 +65,31 @@ p:last-child {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+#Register {
+    background: linear-gradient(135deg, #666, #333); /* Gradiente en escala de grises */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+#Register:hover {
+    background: linear-gradient(135deg, #777, #444); /* Cambio de tono al pasar el mouse */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(41, 25, 25, 0.3);
+}
+
+#Register:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .formulario {
     max-width: 400px;
     margin: 50px auto;
@@ -110,32 +135,4 @@ p:last-child {
     border-color: #aaa;
     outline: none;
     background: #222;
-}
-
-.login-btn {
-    background: linear-gradient(135deg, #666, #333);
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    min-width: 150px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    outline: none;
-    display: inline-block;
-    text-align: center;
-}
-
-.login-btn:hover {
-    background: linear-gradient(135deg, #777, #444);
-    transform: scale(1.05);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-}
-
-.login-btn:active {
-    transform: scale(0.98);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
